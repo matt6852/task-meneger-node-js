@@ -2,10 +2,12 @@
   "name": "jobs",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "dev": "nodemon index.js",
-    "build": "jsc",
     "start": "node index.js"
   },
   "keywords": [],
