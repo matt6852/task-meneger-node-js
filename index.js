@@ -7,7 +7,9 @@ require("dotenv").config();
 app.use(express.json());
 app.use(express.static("./public"));
 
+const errorHandlerMiddleware = require("./middleware/error-handler");
 app.use("/api/v1/tasks/", tasks);
+app.use(errorHandlerMiddleware);
 
 const start = async () => {
   try {
